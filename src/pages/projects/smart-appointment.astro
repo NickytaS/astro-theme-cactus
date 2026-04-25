@@ -1,0 +1,62 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	title: "Smart Appointment",
+	description:
+		"Detailed overview of Smart Appointment, a React Native and Expo mobile application for managing medical appointments.",
+};
+---
+
+<PageLayout meta={meta}>
+	<section>
+		<p class="mb-6">
+			<a class="cactus-link" href="/">← Back to Home</a>
+		</p>
+		<h1 class="title mb-8">Smart Appointment</h1>
+		<div class="prose prose-sm prose-cactus max-w-none">
+			<p>
+				Smart Appointment is a mobile application built with React Native and Expo to help users
+				book, organize, and manage medical appointments in one place. The project focuses on a clear
+				user experience for both daily scheduling and profile management.
+			</p>
+
+			<h2>Project Goals</h2>
+			<ul>
+				<li>Create an easy appointment workflow on mobile devices.</li>
+				<li>Support secure user onboarding with signup and login.</li>
+				<li>Allow users to manage appointment updates quickly.</li>
+				<li>Provide a reliable local data layer for smooth performance.</li>
+			</ul>
+
+			<h2>Main Features</h2>
+			<ul>
+				<li>User authentication (signup and login).</li>
+				<li>Appointment scheduling and management (reschedule/cancel).</li>
+				<li>Doctor and patient profile views.</li>
+				<li>SQLite integration for local data storage.</li>
+				<li>Image upload support for profile-related content.</li>
+			</ul>
+
+			<h2>Tech Stack</h2>
+			<ul>
+				<li>React Native</li>
+				<li>Expo + Expo Router</li>
+				<li>TypeScript</li>
+				<li>SQLite</li>
+			</ul>
+
+			<p>
+				<strong>Repository:</strong>
+				<a
+					class="cactus-link ms-2"
+					href="https://github.com/NickytaS/Smart-Appointment"
+					rel="noreferrer"
+					target="_blank"
+				>
+					github.com/NickytaS/Smart-Appointment
+				</a>
+			</p>
+		</div>
+	</section>
+</PageLayout>

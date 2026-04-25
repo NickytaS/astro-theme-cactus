@@ -1,0 +1,37 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	title: "BMW Coding and Programming Course",
+	description:
+		"Certificate of completion details for the BMW coding and programming course by BIMDOC.",
+};
+---
+
+<PageLayout meta={meta}>
+	<section>
+		<p class="mb-6">
+			<a class="cactus-link" href="/">← Back to Home</a>
+		</p>
+		<h1 class="title mb-8">BMW Coding and Programming Course</h1>
+		<div class="prose prose-sm prose-cactus max-w-none">
+			<p>
+				This certificate marks completion of a 3-day coding and programming course, delivered in
+				Johvi, Estonia.
+			</p>
+			<ul>
+				<li><strong>Issuer:</strong> BIMDOC</li>
+				<li><strong>Issued to:</strong> Nathalie Sikihimba Kahambu</li>
+				<li><strong>Course period:</strong> May 24 to May 26, 2024</li>
+				<li><strong>Certificate date:</strong> May 26, 2024</li>
+				<li><strong>Location:</strong> Johvi, Estonia</li>
+			</ul>
+			<img
+				src="/images/scans/document-scan-8-page-1.jpg"
+				alt="BMW Coding and Programming course certificate"
+				class="mx-auto block h-[70vh] w-auto rounded border object-contain [transform:rotate(-90deg)]"
+				loading="lazy"
+			/>
+		</div>
+	</section>
+</PageLayout>

@@ -1,0 +1,59 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	title: "Database Migration Tool Evaluator",
+	description:
+		"Detailed overview of a bachelor project evaluating database migration tools across real-world datasets.",
+};
+---
+
+<PageLayout meta={meta}>
+	<section>
+		<p class="mb-6">
+			<a class="cactus-link" href="/">← Back to Home</a>
+		</p>
+		<h1 class="title mb-8">Database Migration Tool Evaluator</h1>
+		<div class="prose prose-sm prose-cactus max-w-none">
+			<p>
+				This bachelor project evaluates how well different migration tools move relational MySQL data
+				into PostgreSQL and MongoDB. The study is based on real application datasets and compares
+				accuracy, schema fidelity, performance, and operational usability.
+			</p>
+
+			<h2>Scope of the Evaluation</h2>
+			<ul>
+				<li>3 migration tools: pgLoader, MRM, and Mongify.</li>
+				<li>3 real-world source databases: WordPress, WooCommerce, and ERPNext.</li>
+				<li>68 tables and 2,108 rows analyzed.</li>
+				<li>40-criteria weighted scoring framework used for final comparison.</li>
+			</ul>
+
+			<h2>Key Findings</h2>
+			<ul>
+				<li>pgLoader achieved the highest overall score for MySQL to PostgreSQL migration.</li>
+				<li>MRM delivered strong MySQL to MongoDB results with a GUI-driven workflow.</li>
+				<li>Mongify showed strong document transformation but lower consistency on one dataset.</li>
+			</ul>
+
+			<h2>Technical Environment</h2>
+			<ul>
+				<li>Docker-based setup for MySQL, PostgreSQL, and MongoDB.</li>
+				<li>Python scripts used for migration analysis and reporting.</li>
+				<li>Mermaid ERDs used for schema visualization and documentation.</li>
+			</ul>
+
+			<p>
+				<strong>Repository:</strong>
+				<a
+					class="cactus-link ms-2"
+					href="https://github.com/NickytaS/nathalie-thesis-project"
+					rel="noreferrer"
+					target="_blank"
+				>
+					github.com/NickytaS/nathalie-thesis-project
+				</a>
+			</p>
+		</div>
+	</section>
+</PageLayout>

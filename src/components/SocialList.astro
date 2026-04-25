@@ -14,14 +14,29 @@ const socialLinks: {
 }[] = [
 	{
 		friendlyName: "Github",
-		link: "https://github.com/chrismwilliams/astro-cactus",
+		link: "mailto:Sikihimbanathalie@gmail.com",
+		name: "mdi:email-outline",
+	},
+	{
+		friendlyName: "Phone",
+		link: "tel:+37129408593",
+		name: "mdi:phone-outline",
+	},
+	{
+		friendlyName: "Location",
+		link: "https://maps.google.com/?q=Liepaja%2C%20Latvia",
+		name: "mdi:map-marker-outline",
+	},
+	{
+		friendlyName: "GitHub",
+		link: "https://github.com/NickytaS",
 		name: "mdi:github",
 	},
 ];
 ---
 
 <div class="flex flex-wrap items-end gap-x-2">
-	<p>Find me on</p>
+	<p>Connect with me</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
